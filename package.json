@@ -1,0 +1,22 @@
+{
+  "name": "NestPlayground",
+  "version": "1.0.0",
+  "description": "Example nest app.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbuchacher/NestPlayground.git"
+  },
+  "keywords": [
+    "nest"
+  ],
+  "author": "jbuchacher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbuchacher/NestPlayground/issues"
+  },
+  "homepage": "https://github.com/jbuchacher/NestPlayground"
+}
