@@ -4,13 +4,13 @@ Cylon.robot({
   connection: {
     name: 'nest',
     adaptor: 'nest',
-    accessToken: 'ZujG9R3bJVoGnuNLHzXVPsmhJeUc',
+    accessToken: process.env.NEST_API_ACCESS_TOKEN,
   },
 
   device: {
     name: 'thermostat',
     driver: 'nest-thermostat',
-    deviceId: 'XXX'
+    deviceId: process.env.NEST_API_CLIENT_ID
   },
 
   work: function(my) {

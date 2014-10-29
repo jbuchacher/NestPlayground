@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/jbuchacher/NestPlayground/issues"
   },
-  "homepage": "https://github.com/jbuchacher/NestPlayground"
+  "homepage": "https://github.com/jbuchacher/NestPlayground",
+  "dependencies": {
+    "cylon": "^0.19.1",
+    "cylon-nest": "^0.4.0"
+  }
 }
