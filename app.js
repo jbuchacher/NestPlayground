@@ -10,19 +10,14 @@ Cylon.robot({
   device: {
     name: 'thermostat',
     driver: 'nest-thermostat',
-    deviceId: process.env.NEST_API_CLIENT_ID
+    deviceId: process.env.NEST_API_THERMOSTAT_DEVICE_ID
   },
 
   work: function(my) {
-    // Listen to the status event to obtain all thermostat
-    // related data in a single object.
-    my.thermostat.on('status', function(data) {
-      console.log('The Thermostat at a glance--->', data);
-    });
 
-    every((60).seconds(), function(){
-      console.log('NEST ambient temp C:', my.thermostat.ambientTemperatureC());
-      console.log('NEST ambient temp F:', my.thermostat.ambientTemperatureF());
+    var thermostat = my.thermostat;
+    thermostat.on('status', function (thermostat) {
+      console.log(thermostat.ambient_temperature_f);
     });
   }
 }).start();

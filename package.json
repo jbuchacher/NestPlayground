@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/jbuchacher/NestPlayground",
   "dependencies": {
-    "cylon": "^0.19.1",
-    "cylon-nest": "^0.4.0"
+    "cylon": "*",
+    "cylon-nest": "*"
   }
 }
